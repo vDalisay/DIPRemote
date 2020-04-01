@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../S4/FUN/musicquiz/dipBackEnd/backend/backend.iml" filepath="$PROJECT_DIR$/../../../S4/FUN/musicquiz/dipBackEnd/backend/backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/dip.iml" filepath="$PROJECT_DIR$/dip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../S4/FUN/musicquiz/dipBackEnd/objects/objects.iml" filepath="$PROJECT_DIR$/../../../S4/FUN/musicquiz/dipBackEnd/objects/objects.iml" />
     </modules>
   </component>
 </project>
