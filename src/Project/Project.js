@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Project = (props) =>{
+const Project = props =>{
     return(
         <div>
-            <p>{props.name}</p>
-            <p>{props.description}</p>
-
+            {console.log(props)}
+            <p>{props.projects.name}</p>
+            <p>{props.projects.description}</p>
         </div>
     )
-}
+};
 
 export default Project;
