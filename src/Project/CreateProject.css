@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+.inputBtn {
+    background-color: #525252;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.saveBtn{
+    width: 10%;
+    background-color: #20abff;
+    position: fixed;
+    bottom:   5%;
+    right: 2%;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+
+.column div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
+}
+
+.row{
+margin: 0 10% 0 10%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
