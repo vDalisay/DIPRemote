@@ -36,7 +36,7 @@ class CreateProject extends React.Component{
             <div className="row">
                 <div className="column">
                 <div>
-                    <p>Project name</p>
+                    <p>Project Name</p>
                     <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
                 </div>
 
@@ -47,7 +47,7 @@ class CreateProject extends React.Component{
                 </div>
 
                 <div>
-                    <p>Upload files</p>
+                    <p>Upload Files</p>
                     <input type="file"/>
                 </div>
 
@@ -60,9 +60,28 @@ class CreateProject extends React.Component{
                 </div>
 
                 <div className="column">
-                    <label>2nd column</label>
-                    <button className="saveBtn" type="submit" onClick={() => {this.makeNewProject()}}>Save</button>
+                    <div>
+                        <p>Team Members</p>
+                        <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
+                        {/*hier moet nog func om members te laten zien na selecteren*/}
+                    </div>
+
+                   <div>
+                       <p>Project Status</p>
+                       <div className="select">
+                           <select>
+                               <option selected disabled>STATUS:</option>
+                               <option value="1">ONGOING</option>
+                               <option value="2">DONE</option>
+                               <option value="3">YET TO START</option>
+                           </select>
+                       </div>
+                   </div>
+
                 </div>
+
+
+                <button className="saveBtn" type="submit" onClick={() => {this.makeNewProject()}}>Save</button>
             </div>
         )
     }
