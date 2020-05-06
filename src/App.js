@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Project from "./Project/Project";
 import CreateProject from "./Project/CreateProject";
+import ProjectDetails from "./Project/ProjectDetails";
 import Navbar from "./components/Navbar/Navbar";
 
 class App extends React.Component{
@@ -78,6 +79,9 @@ class App extends React.Component{
                     <Link to="/CreateProject">Create Project</Link>
                   </li>
                   <li>
+                    <Link to="/ProjectDetails">Project Details</Link>
+                  </li>
+                  <li>
                     <Link to="/3">3</Link>
                   </li>
                 </ul>
@@ -92,6 +96,9 @@ class App extends React.Component{
                   </div>
                 </Route>
                 <Route exact path="/CreateProject" component={CreateProject}>
+                  {/*<CreateProject/>*/}
+                </Route>
+                <Route exact path="/ProjectDetails" component={ProjectDetails}>
                   {/*<CreateProject/>*/}
                 </Route>
                 <Route path="/3">

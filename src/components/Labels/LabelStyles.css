@@ -1,0 +1,32 @@
+.label {
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.tag{
+    background-color: #3FA2F7;
+}
+
+.member{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin: 5px;
+}
+
+.membername{
+    background-color: #282c34;
+    padding: 2px;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+.memberrole{
+    background-color: #525252;
+    padding: 2px;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+}
+

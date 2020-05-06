@@ -36,7 +36,7 @@
     padding: 10px;
 }
 
-.column div{
+.content{
     display: flex;
     flex-direction: column;
     width: 50%;
