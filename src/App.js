@@ -91,8 +91,8 @@ class App extends React.Component{
                     {projects}
                   </div>
                 </Route>
-                <Route path="/CreateProject">
-                  <CreateProject/>
+                <Route exact path="/CreateProject" component={CreateProject}>
+                  {/*<CreateProject/>*/}
                 </Route>
                 <Route path="/3">
 

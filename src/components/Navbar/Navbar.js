@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import { MdAccountCircle } from "react-icons/md";
 import { MdSearch } from "react-icons/md";
-import {Link} from "react-router-dom";
+import {BrowserRouter as Router, Link} from "react-router-dom";
 import {MdAddBox} from "react-icons/md";
 
 const Navbar = props => (
