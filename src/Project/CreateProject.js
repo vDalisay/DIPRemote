@@ -9,7 +9,8 @@ class CreateProject extends React.Component{
         super(props);
         this.state={
             name:null,
-            description:null
+            description:null,
+            status:null
         }
     }
 
@@ -17,7 +18,8 @@ class CreateProject extends React.Component{
         console.log(this.state.name,this.state.description);
         axios.post('http://localhost:8081/project/',{
             name: this.state.name,
-            description: this.state.description
+            description: this.state.description,
+            status:this.state.status,
         }).then(function (response) {
             console.log(response);
         })
@@ -69,11 +71,11 @@ class CreateProject extends React.Component{
                    <div>
                        <p>Project Status</p>
                        <div className="select">
-                           <select>
+                           <select name="status" onChange={this.handleChange}>
                                <option selected disabled>STATUS:</option>
-                               <option value="1">ONGOING</option>
-                               <option value="2">DONE</option>
-                               <option value="3">YET TO START</option>
+                               <option value="ONGOING">ONGOING</option>
+                               <option value="DONE">DONE</option>
+                               <option value="YET TO START">YET TO START</option>
                            </select>
                        </div>
                    </div>

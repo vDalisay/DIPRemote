@@ -11,7 +11,10 @@
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0"
+    "react-file-picker": "0.0.6",
+    "react-icons": "^3.10.0",
+    "react-scripts": "3.4.0",
+    "to-byte-array": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
