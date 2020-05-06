@@ -11,6 +11,7 @@ import Project from "./Project/Project";
 import CreateProject from "./Project/CreateProject";
 import Navbar from "./components/Navbar/Navbar";
 import {Router} from "react-router";
+import AllProjects from "./Project/AllProjects/AllProjects";
 
 class App extends Component{
   constructor(props) {
@@ -72,9 +73,7 @@ class App extends Component{
                   </div>
                 </Router>
                 <Route exact path="/CreateProject" component={CreateProject}/>
-                <Route exact path="/3">
-
-                </Route>
+                <Route exact path="/AllProjects" component={AllProjects}/>
                 <Route path="/">
                   <div className="App">
                     <header className="App-header">

@@ -1,0 +1,22 @@
+.projectsContainer {
+
+}
+
+.allProjects{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    width: 80%;
+}
+
+.projectsTopContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.tempDiv{
+    display: flex;
+    justify-content: center;
+}

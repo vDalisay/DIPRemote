@@ -1,0 +1,61 @@
+.backdropColor{
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F4F4;
+    width: 30em;
+    height: auto;
+    border-radius: 5px;
+}
+
+.projectTitle {
+    background-color: #2770DD;
+    border-radius: 5px 5px 0 0;
+}
+
+.titleText {
+    margin: 0.4em;
+    padding: 5px 0 5px 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.tagsSection {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
+    width: auto;
+}
+
+.leftContent {
+    border-radius: 0 0 0 5px;
+    border-right: 1px solid lightgray;
+}
+
+.rightContent {
+    border-radius: 0 0 5px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#tag {
+    background-color: #3FA2F7;
+    border-radius: 20px;
+    padding: 0.3em 0.5em ;
+    margin: 0.3em;
+    color: white;
+}
+
+.authorSection {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
