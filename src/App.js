@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Project from "./Project/Project";
 import CreateProject from "./Project/CreateProject";
+import Navbar from "./components/Navbar/Navbar";
 
 class App extends React.Component{
   constructor(props) {
@@ -58,6 +59,11 @@ class App extends React.Component{
     );
     return (
         <div className="App">
+          <Router>
+            <Navbar/>
+          </Router>
+          <div style={{marginTop: '64px'}}> </div> {/*Even lelijk de content omlaag gepusht. bij merge veranderen*/}
+
           <Router>
             <div>
               <nav>
