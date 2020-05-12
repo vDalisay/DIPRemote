@@ -9,6 +9,8 @@
   border: 1px solid lightgrey;
   width: 80%;
   background-color: white;
+  height: auto;
+  min-height: 100vh;
 }
 .App-logo {
   height: 40vmin;
