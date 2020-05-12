@@ -64,7 +64,7 @@ class CreateProject extends React.Component{
                         {/*hier moet nog func om members te laten zien na selecteren*/}
                     </div>
 
-                   <div className="content">
+                   <div className='content'>
                        <p>Project Status</p>
                        <div className="select">
                            <select>

@@ -43,6 +43,7 @@ class ProjectDetails extends Component {
                         <div className="content">
                             <p>Uploaded Files</p>
 
+                            <input type="file"/>
                         </div>
 
                     </div>
@@ -51,12 +52,12 @@ class ProjectDetails extends Component {
             <div className='row'>
                 <div>
                     <p>Discussions</p>
-                    <ul>
-                        <li>A</li>
-                        <li>B</li>
-                        <li>C</li>
-                        <button className="inputBtn">Add Discussion</button>
+                    <ul className={'list'}>
+                        <li>Test discussion thread</li>
+                        <li>Test discussion thread</li>
+                        <li>Test discussion thread</li>
                     </ul>
+                    <button className="inputBtn">Add Discussion</button>
                 </div>
 
                     <div>
