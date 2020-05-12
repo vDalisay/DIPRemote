@@ -13,6 +13,7 @@ import ProjectDetails from "./Project/ProjectDetails";
 import Navbar from "./components/Navbar/Navbar";
 import {Router} from "react-router";
 import AllProjects from "./Project/AllProjects/AllProjects";
+import Profile from "./Profile/Profile";
 
 class App extends Component{
   constructor(props) {
@@ -78,8 +79,8 @@ class App extends Component{
                 </Router>
                 <Route exact path="/CreateProject" component={CreateProject}/>
                 <Route exact path="/AllProjects" component={AllProjects}/>
-                <Route exact path="/ProjectDetails" component={ProjectDetails}>
-                </Route>
+                <Route exact path="/ProjectDetails" component={ProjectDetails}/>
+                <Route exact path="/Profile" component={Profile}/>
               </Switch>
             </div>
             </div>
