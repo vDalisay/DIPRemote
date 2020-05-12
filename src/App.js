@@ -10,12 +10,14 @@ import {
 } from "react-router-dom";
 import Project from "./Project/Project";
 import CreateProject from "./Project/CreateProject";
+import Files from "./Project/File";
 
 class App extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
       projects: [{item:""}],
+      files:[{item:""}],
 
     };
     this.getAllProjects = this.getAllProjects.bind(this);
@@ -23,6 +25,7 @@ class App extends React.Component{
 
   componentDidMount() {
     this.getAllProjects();
+    this.getAllFiles();
   }
 
   getAllProjects(){
@@ -46,6 +49,27 @@ class App extends React.Component{
         });
   };
 
+  getAllFiles(){
+    const self = this;
+    axios.get('http://localhost:8081/project/allFile'
+    )
+        .then(function (response) {
+          console.log(response.data);
+          const files = [...self.state.files];
+          for(let i = 0; i < response.data.length; i++) {
+            console.log(response.data[i]);
+            files[i] = response.data[i];
+          }
+          self.setState({
+            files: files,
+          });
+          return "succes"
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+  };
+
 
   render() {
     let projects = null;
@@ -53,6 +77,15 @@ class App extends React.Component{
         <div>
           {this.state.projects.map((projects,index) =>{
             return <Project projects={projects} />
+          })}
+        </div>
+    );
+
+    let files = null;
+    files = (
+        <div>
+          {this.state.files.map((files,index) =>{
+            return <Files files={files} />
           })}
         </div>
     );
@@ -83,6 +116,7 @@ class App extends React.Component{
                 <Route path="/1">
                   <div>
                     {projects}
+                    {files}
                   </div>
                 </Route>
                 <Route path="/CreateProject">
