@@ -1,8 +1,9 @@
 import React from 'react';
 import RightContent from "./RightContent/RightContent";
+import "./ProjectInList.css";
 
 const ProjectInList = props => (
-    <div className="main">
+    //<div className="main">
         <div className="backdropColor">
             <div className="projectTitle">
                 <h5 className="titleText">Visualization of furniture using Augmented Reality on both Android and IOS devices.</h5>
@@ -26,7 +27,7 @@ const ProjectInList = props => (
                 </div>
             </div>
         </div>
-    </div>
+    //</div>
 
 );
 

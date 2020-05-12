@@ -60,6 +60,9 @@ class App extends Component{
     );
     return (
         <div className="App">
+            <div className="bg">
+
+
             <Navbar/>
           <div style={{marginTop: '64px'}}> </div> {/*Even lelijk de content omlaag gepusht. bij merge veranderen*/}
 
@@ -75,14 +78,9 @@ class App extends Component{
                 <Route exact path="/CreateProject" component={CreateProject}/>
                 <Route exact path="/AllProjects" component={AllProjects}/>
                 <Route path="/">
-                  <div className="App">
-                    <header className="App-header">
-
-                    </header>
-                  </div>
-
                 </Route>
               </Switch>
+            </div>
             </div>
         </div>
     )

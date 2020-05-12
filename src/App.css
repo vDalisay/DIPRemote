@@ -1,7 +1,15 @@
 .App {
   text-align: center;
+  background-color: #0061B4;
+  display: flex;
+  justify-content: center;
 }
 
+.bg {
+  border: 1px solid lightgrey;
+  width: 80%;
+  background-color: white;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

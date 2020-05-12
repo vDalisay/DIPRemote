@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     background-color: #F4F4F4;
-    width: 30em;
-    height: auto;
     border-radius: 5px;
+    width: 30em;
+    height: 15.8em;
+    margin: 1em;
 }
 
 .projectTitle {
@@ -16,11 +17,6 @@
     margin: 0.4em;
     padding: 5px 0 5px 0;
 }
-.main{
-    display: flex;
-    justify-content: center;
-}
-
 .projectContent {
     display: flex;
     flex-direction: row;
