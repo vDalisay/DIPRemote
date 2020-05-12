@@ -9,6 +9,7 @@
     "axios": "^0.19.2",
     "mobx": "^5.15.4",
     "mobx-react": "^6.2.2",
+    "file-api": "^0.10.4",
     "poppers": "^0.1.2",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0",
@@ -40,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "browserify-fs": "^1.0.0",
     "react-router-dom": "^5.1.2"
   }
 }
