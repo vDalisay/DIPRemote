@@ -1,9 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import axios from 'axios'
 
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Link
@@ -12,8 +11,10 @@ import Project from "./Project/Project";
 import CreateProject from "./Project/CreateProject";
 import ProjectDetails from "./Project/ProjectDetails";
 import Navbar from "./components/Navbar/Navbar";
+import {Router} from "react-router";
+import AllProjects from "./Project/AllProjects/AllProjects";
 
-class App extends React.Component{
+class App extends Component{
   constructor(props) {
     super(props);
     this.state = {
@@ -60,61 +61,28 @@ class App extends React.Component{
     );
     return (
         <div className="App">
-          <Router>
+            <div className="bg">
+
+
             <Navbar/>
-          </Router>
           <div style={{marginTop: '64px'}}> </div> {/*Even lelijk de content omlaag gepusht. bij merge veranderen*/}
 
-          <Router>
             <div>
-              <nav>
-                <ul>
-                  <li>
-                    <Link to="/">Home</Link>
-                  </li>
-                  <li>
-                    <Link to="/1">1</Link>
-                  </li>
-                  <li>
-                    <Link to="/CreateProject">Create Project</Link>
-                  </li>
-                  <li>
-                    <Link to="/ProjectDetails">Project Details</Link>
-                  </li>
-                  <li>
-                    <Link to="/3">3</Link>
-                  </li>
-                </ul>
-              </nav>
-
               {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
               <Switch>
-                <Route path="/1">
+                <Router exact path="/1">
                   <div>
                     {projects}
                   </div>
-                </Route>
-                <Route exact path="/CreateProject" component={CreateProject}>
-                  {/*<CreateProject/>*/}
-                </Route>
-                <Route exact path="/ProjectDetails" component={ProjectDetails}>
-                  {/*<CreateProject/>*/}
-                </Route>
-                <Route path="/3">
-
-                </Route>
+                </Router>
+                <Route exact path="/CreateProject" component={CreateProject}/>
+                <Route exact path="/AllProjects" component={AllProjects}/>
                 <Route path="/">
-                  <div className="App">
-                    <header className="App-header">
-
-                    </header>
-                  </div>
-
                 </Route>
               </Switch>
             </div>
-          </Router>
+            </div>
         </div>
     )
   }
