@@ -8,7 +8,7 @@ import {MdAddBox} from "react-icons/md";
 const Navbar = props => (
     <header className="navbar">
         <nav className="navbar_navigation">
-            <div className="navbar_logo"><a href="/">Philips Workshops</a></div>
+            <div className="navbar_logo"><a href="/AllProjects">Philips Workshops</a></div>
             <div className="spacer"> </div>
             <div className="navbar_navigation-items">
                 <ul>

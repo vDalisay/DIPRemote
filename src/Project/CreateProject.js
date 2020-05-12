@@ -107,7 +107,7 @@ class CreateProject extends React.Component{
                 <div className="column">
                     <div className="content">
                         <p>Team Members</p>
-                        <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
+                        <input type="text" name="name" value={this.state.members} onChange={this.handleChange}/>
                         {/*hier moet nog func om members te laten zien na selecteren*/}
                     </div>
 

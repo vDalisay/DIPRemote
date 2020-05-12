@@ -17,7 +17,7 @@ const ProjectInList = props => (
                         <p id="tag">Furniture</p>
                     </div>
                     <div className="authorSection">
-                        <p>By M. Hopperburg 13-2-2020 </p>
+                        <a href="http://localhost:3000/ProjectDetails">By M. Hopperburg 13-2-2020 </a>
                     </div>
                 </div>
                 <div className="rightContent">
