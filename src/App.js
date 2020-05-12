@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Project from "./Project/Project";
 import CreateProject from "./Project/CreateProject";
+import ProjectDetails from "./Project/ProjectDetails";
 import Navbar from "./components/Navbar/Navbar";
 import {Router} from "react-router";
 import AllProjects from "./Project/AllProjects/AllProjects";

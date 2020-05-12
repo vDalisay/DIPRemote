@@ -2,8 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import './CreateProject.css';
 
-import {Dropdown} from 'react-bootstrap';
-
 class CreateProject extends React.Component{
     constructor(props) {
         super(props);
@@ -35,23 +33,23 @@ class CreateProject extends React.Component{
         return(
             <div className="row">
                 <div className="column">
-                <div>
+                <div className="content">
                     <p>Project Name</p>
                     <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
                 </div>
 
-                <div>
+                <div className="content">
                     <p>Description</p>
                     <textarea name="description" value={this.state.description} onChange={this.handleChange}/>
                     <button className="inputBtn">Import GIT Readme</button>
                 </div>
 
-                <div>
+                <div className="content">
                     <p>Upload Files</p>
                     <input type="file"/>
                 </div>
 
-                <div>
+                <div className="content">
                     <p>Tags</p>
                     <input type="text"/>
                     <button className="inputBtn">Generate text from description</button>
@@ -60,13 +58,13 @@ class CreateProject extends React.Component{
                 </div>
 
                 <div className="column">
-                    <div>
+                    <div className="content">
                         <p>Team Members</p>
                         <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
                         {/*hier moet nog func om members te laten zien na selecteren*/}
                     </div>
 
-                   <div>
+                   <div className='content'>
                        <p>Project Status</p>
                        <div className="select">
                            <select>
