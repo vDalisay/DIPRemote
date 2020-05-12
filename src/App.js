@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Project from "./Project/Project";
 import CreateProject from "./Project/CreateProject";
+import ProjectList from "./Project/ProjectList"
 
 class App extends React.Component{
   constructor(props) {
@@ -74,6 +75,9 @@ class App extends React.Component{
                   <li>
                     <Link to="/3">3</Link>
                   </li>
+                  <li>
+                    <Link to="/ProjectList">ProjectList</Link>
+                  </li>
                 </ul>
               </nav>
 
@@ -88,6 +92,11 @@ class App extends React.Component{
                 <Route path="/CreateProject">
                   <CreateProject/>
                 </Route>
+
+                 <Route path="/ProjectList">
+                    <ProjectList/>
+                 </Route>
+
                 <Route path="/3">
 
                 </Route>
